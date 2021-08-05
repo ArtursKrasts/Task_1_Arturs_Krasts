@@ -643,7 +643,7 @@ footer p,
 
   footer {
     margin: 8.5625rem 5rem 0;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20% 20% 30% 30%;
     grid-template-areas:
       "golden-logo golden-logo f-p-2 f-p-2"
       "golden-logo golden-logo f-p-3 f-p-3"
