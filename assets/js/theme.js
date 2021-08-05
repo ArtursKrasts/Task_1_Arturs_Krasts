@@ -1,7 +1,7 @@
 function openNav() {
-  document.getElementById("navOverlay").style.display = "block";
+  document.getElementById("nav-overlay").style.display = "block";
 }
 
 function closeNav() {
-  document.getElementById("navOverlay").style.display = "none";
+  document.getElementById("nav-overlay").style.display = "none";
 }
