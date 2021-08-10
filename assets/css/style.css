@@ -3,7 +3,6 @@ body {
   position: relative;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
-  -webkit-appearance: none;
 }
 
 .menu {
@@ -316,6 +315,7 @@ form p {
 .checkbox-new::after {
   content: "\2714";
   color: #e7e7e7;
+  -webkit-appearance: none;
 }
 
 #agreement:checked + label .checkbox-new {
@@ -452,6 +452,13 @@ footer p,
 
 .props {
   display: none;
+}
+
+.footer-bg {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
 }
 
 .blue-bg {
