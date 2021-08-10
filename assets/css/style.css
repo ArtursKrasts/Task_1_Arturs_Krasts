@@ -335,7 +335,7 @@ form input[type="submit"] {
   text-decoration: none;
   margin: 3.125rem auto;
   color: white;
-  background-color: #ffa800;
+  background-color: red;
   height: 3.125rem;
   width: 8.75rem;
   border-radius: 1.5625rem;
