@@ -455,7 +455,7 @@ footer p,
 }
 
 .footer-bg {
-  position: absolute;
+  position: relative;
   bottom: 0;
   z-index: -1;
   width: 100%;
