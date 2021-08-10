@@ -263,6 +263,7 @@ h1 {
   line-height: 1.0625rem;
   letter-spacing: -0.015em;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 #comment {
