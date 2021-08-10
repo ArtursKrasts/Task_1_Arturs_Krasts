@@ -457,8 +457,6 @@ footer p,
 .footer-bg {
   position: relative;
   bottom: 0;
-  z-index: -1;
-  width: 100%;
   border: 1px solid red;
 }
 
