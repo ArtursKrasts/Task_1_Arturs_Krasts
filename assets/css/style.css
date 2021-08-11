@@ -261,6 +261,7 @@ h1 {
   font-size: 0.875rem;
   line-height: 1.0625rem;
   letter-spacing: -0.015em;
+  cursor: pointer;
 }
 
 #comment {
@@ -337,6 +338,7 @@ form input[type="submit"] {
   width: 8.75rem;
   border-radius: 1.5625rem;
   border: none;
+  -webkit-appearance: none;
 }
 
 .supporters {
