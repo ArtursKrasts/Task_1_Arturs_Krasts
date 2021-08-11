@@ -313,7 +313,7 @@ form p {
 }
 
 .checkbox-new::after {
-  content: "\2714";
+  content: "\2714\fe0e";
   color: #e7e7e7;
 }
 
