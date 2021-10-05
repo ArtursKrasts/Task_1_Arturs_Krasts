@@ -1,3 +1,5 @@
+var quotesPos = 0;
+
 function openNav() {
   document.getElementById("nav-overlay").style.display = "block";
 }
@@ -39,4 +41,49 @@ function showHiddenImages() {
       element.style.display = "block";
     }
   );
+}
+
+function quotesMove(direction) {
+  const quotes = document.getElementsByClassName("quote");
+  if (direction == "right") {
+    if (!(quotesPos >= quotes.length - 1)) {
+      quotesPos++;
+      for (let i = 0; i < quotes.length; i++) {
+        if (i == quotesPos) {
+          quotes[i].style.display = "block";
+        } else {
+          quotes[i].style.display = "none";
+        }
+      }
+    }
+  } else if (direction == "left") {
+    if (!(quotesPos == 0)) {
+      quotesPos--;
+      for (let i = 0; i < quotes.length; i++) {
+        if (i == quotesPos) {
+          quotes[i].style.display = "block";
+        } else {
+          quotes[i].style.display = "none";
+        }
+      }
+    }
+  }
+
+  if (quotesPos == 0) {
+    document.getElementById("arrow-left").style.opacity = "50%";
+    document.getElementById("arrow-left").style.cursor = "initial";
+  } else if (quotesPos == quotes.length - 1) {
+    document.getElementById("arrow-right").style.opacity = "50%";
+    document.getElementById("arrow-right").style.cursor = "initial";
+  } else {
+    document.getElementById("arrow-left").style.opacity = "100%";
+    document.getElementById("arrow-left").style.cursor = "pointer";
+    document.getElementById("arrow-right").style.opacity = "100%";
+    document.getElementById("arrow-right").style.cursor = "pointer";
+  }
+}
+
+function formSubmited() {
+  document.getElementById("form-bottom").style.display = "none";
+  document.getElementById("after-submit").style.display = "block";
 }

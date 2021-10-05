@@ -82,24 +82,46 @@
   </div>
 
   <div class="quotes">
-    <p class="name">Ken Ludden</p>
-    <p class="occupation">Director, Margot Fonteyn Academy of Ballet</p>
-    <p class="quote">For it is Juris work that is the<br>
-      light the human race needs so badly these<br> days.
-      His vision is inspired and talent is<br> beyond measure.
-    </p>
-    <img class="arrow-left" src="assets\img\arrow_left.svg">
-    <img class="arrow-right" src="assets\img\arrow_right.svg">
+    <div id="quote-1" class="quote">
+      <p class="name">Ken Ludden</p>
+      <p class="occupation">Director, Margot Fonteyn Academy of Ballet</p>
+      <p class="quote-text">For it is Juris work that is the<br>
+        light the human race needs so badly these<br> days.
+        His vision is inspired and talent is<br> beyond measure.
+      </p>
+    </div>
+    <div id="quote-2" class="quote">
+      <p class="name">Name 2</p>
+      <p class="occupation">Occupation 2</p>
+      <p class="quote-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium porro eos modi hic deleniti maiores laboriosam qui.
+        Voluptatem magnam, numquam suscipit earum accusantium officiis
+        iure expedita, corrupti eum, officia amet!
+      </p>
+    </div>
+    <div id="quote-3" class="quote">
+      <p class="name">Name 3</p>
+      <p class="occupation">Occupation 3</p>
+      <p class="quote-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Dicta animi provident vitae quos eum architecto nihil libero accusantium,
+        enim officia at, accusamus nesciunt nobis magnam dolorem similique delectus
+        optio laboriosam!
+      </p>
+    </div>
+    <img id="arrow-left" class="arrow-left" src="assets\img\arrow_left.svg" onclick="quotesMove('left')">
+    <img id="arrow-right" class="arrow-right" src="assets\img\arrow_right.svg" onclick="quotesMove('right')">
   </div>
 
   <footer>
-    <picture class="golden-logo" onclick="document.location.href='index.html'">
+    <picture class=" golden-logo" onclick="document.location.href='index.html'">
       <source srcset="assets\img\Golden_big.svg" media="(min-width: 992px)">
       <source srcset="assets\img\Golden_avg.svg" media="(min-width: 600px)">
       <img src="assets\img\Golden_sm.svg">
     </picture>
     <p class="f-p-1">Juris Gogulis</p>
-    <p class="f-p-2">juris.gogulis@sparkleheart.org</p>
+    <a class="f-p-2" href="mailto: juris.gogulis@sparkleheart.org">
+      <p class="f-p-2">juris.gogulis@sparkleheart.org</p>
+    </a>
     <p class="f-p-3">+37126890034</p>
     <p class="f-p-4">Biķernieku iela 24a - 5, LV-1006</p>
     <a href="#" class="f-a-5">Skatīt rekvizītus</a>

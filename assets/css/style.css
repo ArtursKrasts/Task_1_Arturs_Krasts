@@ -489,7 +489,7 @@ form {
   letter-spacing: -0.015em;
 }
 
-form p {
+#form-bottom p {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 0.9375rem;
@@ -541,7 +541,7 @@ form input[type="submit"] {
   line-height: 3.125rem;
   text-align: center;
   text-decoration: none;
-  margin: 3.125rem auto;
+  margin: 3.125rem auto 10rem;
   color: white;
   background-color: #ffa800;
   height: 3.125rem;
@@ -549,6 +549,26 @@ form input[type="submit"] {
   border-radius: 1.5625rem;
   border: none;
   -webkit-appearance: none;
+  cursor: pointer;
+}
+
+#after-submit {
+  margin: 3.125rem 0 13.75rem;
+  color: #ffa800;
+  display: none;
+}
+
+#after-submit > p {
+  margin-bottom: 2.125rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.063rem;
+}
+
+#after-submit > p:first-child {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -577,7 +597,7 @@ form input[type="submit"] {
     letter-spacing: -0.015em;
   }
 
-  form p {
+  #form-bottom p {
     font-size: 0.875rem;
     line-height: 1.0625rem;
   }
@@ -588,11 +608,26 @@ form input[type="submit"] {
   }
 
   form input[type="submit"] {
+    margin-bottom: 13.75rem;
     font-size: 1.5rem;
     line-height: 3.875rem;
     height: 3.875rem;
     width: 11.375rem;
     border-radius: 1.9375rem;
+  }
+
+  #after-submit {
+    margin: 3.75rem 0 12.625rem;
+  }
+
+  #after-submit > p {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+
+  #after-submit > p:first-child {
+    font-size: 1.5rem;
+    line-height: 1.813rem;
   }
 }
 
@@ -615,6 +650,10 @@ form input[type="submit"] {
   form {
     width: 38.25rem;
   }
+
+  #after-submit {
+    margin-bottom: 16.375rem;
+  }
 }
 /* Supporters */
 .supporters {
@@ -626,6 +665,7 @@ form input[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .supp-2 {
@@ -633,6 +673,7 @@ form input[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .supp-3 {
@@ -640,6 +681,7 @@ form input[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .supp-4 {
@@ -647,6 +689,7 @@ form input[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .grid-supporters {
@@ -708,6 +751,11 @@ footer p,
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 0.9375rem;
+}
+
+.f-p-2 {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .f-a-5 {
@@ -1015,6 +1063,14 @@ footer p,
   max-width: 37.5rem;
 }
 
+.quote {
+  display: none;
+}
+
+#quote-1 {
+  display: block;
+}
+
 .quotes .name {
   margin-bottom: 0.625rem;
   color: #2f4858;
@@ -1032,7 +1088,7 @@ footer p,
   line-height: 1.063rem;
 }
 
-.quotes .quote {
+.quotes .quote-text {
   margin-bottom: 1.875rem;
   color: #2f4858;
   font-style: italic;
@@ -1046,8 +1102,14 @@ footer p,
   display: inline;
 }
 
+.arrow-right {
+  cursor: pointer;
+}
+
 .arrow-left {
+  opacity: 50%;
   margin-right: 2.938rem;
+  cursor: initial;
 }
 
 @media screen and (min-width: 600px) {
@@ -1066,7 +1128,7 @@ footer p,
     line-height: 1.375rem;
   }
 
-  .quotes .quote {
+  .quotes .quote-text {
     font-size: 1.5rem;
     line-height: 1.813rem;
   }

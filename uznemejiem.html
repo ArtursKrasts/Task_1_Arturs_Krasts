@@ -54,23 +54,29 @@
     tad priecāsimies ar Jums iepazīties.
   </p>
 
-  <form class="form-uznemejiem">
+  <form action="javascript:void(0)" onsubmit="formSubmited()">
     <h2>SAZINĀTIES AR MUMS</h2>
     <div class="grid-form">
-      <input type="text" id="name" placeholder="Vārds, Uzvārds*">
-      <input type="text" id="email" placeholder="E-pasts*">
-      <input type="text" id="phoneNr" placeholder="Telefons*">
-      <textarea id="comment" placeholder="Jautājums, vai komentārs*"></textarea>
+      <input type="text" id="name" name="name" placeholder="Vārds, Uzvārds*" required>
+      <input type="text" id="email" name="email" placeholder="E-pasts*" required>
+      <input type="text" id="phoneNr" name="phoneNr" placeholder="Telefons*" required>
+      <textarea id="comment" name="comment" placeholder="Jautājums, vai komentārs*" required></textarea>
     </div>
-    <p>* obligāti aizpildāmie lauki</p>
-    <div>
-      <input checked type="checkbox" id="agreement">
-      <label for="agreement">
-        <div class="checkbox-new"></div>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā
-        un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.
-      </label>
+    <div id="form-bottom">
+      <p>* obligāti aizpildāmie lauki</p>
+      <div>
+        <input checked type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">
+          <div class="checkbox-new"></div>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā
+          un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.
+        </label>
+      </div>
+      <input type="submit" value="Sūtīt">
     </div>
-    <input type="submit" value="Sūtīt">
+    <div id="after-submit">
+      <p>Paldies, ka sapņo!</p>
+      <p>Ja Tavs sapnis tiks izvēlēts, mēs ar Tevi sazināsimies.</p>
+    </div>
   </form>
 
   <footer>
@@ -80,7 +86,9 @@
       <img src="assets\img\Golden_sm.svg">
     </picture>
     <p class="f-p-1">Juris Gogulis</p>
-    <p class="f-p-2">juris.gogulis@sparkleheart.org</p>
+    <a class="f-p-2" href="mailto: juris.gogulis@sparkleheart.org">
+      <p class="f-p-2">juris.gogulis@sparkleheart.org</p>
+    </a>
     <p class="f-p-3">+37126890034</p>
     <p class="f-p-4">Biķernieku iela 24a - 5, LV-1006</p>
     <a href="#" class="f-a-5">Skatīt rekvizītus</a>
